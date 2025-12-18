@@ -25,7 +25,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MlFrv
 
 local window = library:AddWindow("Bah •-•👍", {
     main_color = Color3.fromRGB(198, 19, 205, 0.66),
-    min_size = Vector2.new(685, 550),
+    min_size = Vector2.new(585, 550),
     can_resize = false,
 })
 
@@ -188,7 +188,7 @@ local function getPlayerDisplayText(player)
     return player.DisplayName .. " | " .. player.Name
 end
 
-local whitelistDropdown = Killing:AddDropdown("Selecione Pessoa(s) para Parar de Matar", function(selectedText)
+local whitelistDropdown = Killing:AddDropdown("Selecione Pessoa pra Parar de Matar", function(selectedText)
     local playerName = selectedText:match("| (.+)$")
     if playerName then
         playerName = playerName:gsub("^%s*(.-)%s*$", "%1") 
@@ -1595,3 +1595,4 @@ tabteleport:AddButton("Ilha do Ringue [Brawl]", function()
         Duration = 0
     })
 end)
+
