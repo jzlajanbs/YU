@@ -188,7 +188,7 @@ local function getPlayerDisplayText(player)
     return player.DisplayName .. " | " .. player.Name
 end
 
-local whitelistDropdown = Killing:AddDropdown("Whitelist", function(selectedText)
+local whitelistDropdown = Killing:AddDropdown("Selecione Pessoa(s) para Parar de Matar", function(selectedText)
     local playerName = selectedText:match("| (.+)$")
     if playerName then
         playerName = playerName:gsub("^%s*(.-)%s*$", "%1") 
@@ -1337,7 +1337,7 @@ local tabpets = window:AddTab("Comprar Pets")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local selectedPet = "Neon Guardian"
-local petDropdown = tabpets:AddDropdown("Select Pet", function(text)
+local petDropdown = tabpets:AddDropdown("Selecionar Pet", function(text)
     selectedPet = text
 end)
 
@@ -1378,7 +1378,7 @@ petDropdown:Add("White Pegasus")
 petDropdown:Add("White Pheonix")
 petDropdown:Add("Yellow Butterfly")
 
-tabpets:AddSwitch("Auto Open Pet", function(bool)
+tabpets:AddSwitch("Comprar Pet Automaticamente", function(bool)
     _G.AutoHatchPet = bool
     if bool then
         spawn(function()
@@ -1394,7 +1394,7 @@ tabpets:AddSwitch("Auto Open Pet", function(bool)
 end)
 
 local selectedAura = "Blue Aura"
-local auraDropdown = tabpets:AddDropdown("Select Aura", function(text)
+local auraDropdown = tabpets:AddDropdown("Selecionar Aura", function(text)
     selectedAura = text
 end)
 
@@ -1423,7 +1423,7 @@ auraDropdown:Add("Ultra Mirage")
 auraDropdown:Add("Unstable Mirage")
 auraDropdown:Add("Yellow Aura")
 
-tabpets:AddSwitch("Auto Open Aura", function(bool)
+tabpets:AddSwitch("Comprar Aura Automaticamente", function(bool)
     _G.AutoHatchAura = bool
     if bool then
         spawn(function()
@@ -1595,10 +1595,3 @@ tabteleport:AddButton("Ilha do Ringue [Brawl]", function()
         Duration = 0
     })
 end)
-
-
-
-
-
-
-
