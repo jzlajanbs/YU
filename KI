@@ -2,10 +2,10 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local whitelist = {
-    ["aljaveame2"] = true,
+    ["Babyzinha_buaaa"] = true,
     ["LuaWorldV99"] = true,
-    ["lhhJFZe"] = true,
-    ["IhhJFZe"] = true
+    ["Bibizinha_buaa"] = true,
+    ["Michl173"] = true
 }
 
 if not whitelist[LocalPlayer.Name] then
@@ -23,15 +23,15 @@ end)
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TssAX/UUU/refs/heads/main/I", true))()
 
-local window = library:AddWindow("Morningstar", {
-    main_color = Color3.fromRGB(242, 65, 255),
+local window = library:AddWindow("Bah •-•👍", {
+    main_color = Color3.fromRGB(198, 19, 205, 0.66),
     min_size = Vector2.new(510, 550),
     can_resize = false,
 })
 
 local tabFarme = window:AddTab("Farme")
 
-tabFarme:AddLabel("Script feito exclusivamente para Morningstar [Nii_OZ]")
+tabFarme:AddLabel("Script feito exclusivamente para a menina mais especial do mundo 💜")
 
 tabFarme:AddButton("Gamepass AutoLift", function()
     local gamepassFolder = game:GetService("ReplicatedStorage").gamepassIds
@@ -943,6 +943,7 @@ tabteleport:AddButton("Ilha do Ringue [Brawl]", function()
         Duration = 0
     })
 end)
+
 
 
 
